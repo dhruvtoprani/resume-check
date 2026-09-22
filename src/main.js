@@ -1,4 +1,17 @@
 import "./style.css";
+import { inject } from "@vercel/analytics";
+
+if (import.meta.env.PROD) {
+  inject({
+    beforeSend(event) {
+      const url = new URL(event.url);
+      url.search = "";
+      url.hash = "";
+      return { ...event, url: url.toString() };
+    },
+  });
+}
+
 import { extractPageText } from "./pdf-text.js";
 import pdfWorkerUrl from "pdfjs-dist/legacy/build/pdf.worker.min.mjs?url";
 import { parserError, parserDiagnostic } from "./errors.js";

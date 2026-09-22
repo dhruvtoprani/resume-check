@@ -31,16 +31,16 @@ The example uses a fictional resume with intentional spacing and casing defects.
 
 ## Eight Parsing Checks
 
-| Check | Looks for |
-| --- | --- |
-| Readable text | Too little extractable text |
-| Text on every page | PDF pages with little or no text |
-| Word spacing | Unusually long strings that may contain joined words |
-| Character encoding | Replacement, control, or private-use characters |
-| Unexpected letter case | Lowercase letters inside uppercase words |
-| Split-up letters | Runs of individually spaced letters |
-| Contact email | An email address in the extracted text |
-| Section headings | Recognizable standalone English section labels |
+| Check                  | Looks for                                            |
+| ---------------------- | ---------------------------------------------------- |
+| Readable text          | Too little extractable text                          |
+| Text on every page     | PDF pages with little or no text                     |
+| Word spacing           | Unusually long strings that may contain joined words |
+| Character encoding     | Replacement, control, or private-use characters      |
+| Unexpected letter case | Lowercase letters inside uppercase words             |
+| Split-up letters       | Runs of individually spaced letters                  |
+| Contact email          | An email address in the extracted text               |
+| Section headings       | Recognizable standalone English section labels       |
 
 Each check is a heuristic. A flag means **review**, not that the document is definitely wrong. Checks that depend on readable text are skipped when there is not enough text to evaluate.
 
@@ -65,7 +65,7 @@ PDF text streams are consumed through `getReader()` rather than async iteration 
 
 ## Privacy
 
-Resume contents stay in browser memory. The app has no upload endpoint, accounts, analytics, database, or persistent resume storage. Text is inserted as text, never executed as HTML. Clearing the file removes the displayed results; reloading also clears the session.
+Resume contents stay in browser memory. The app has no upload endpoint, accounts, database, or persistent resume storage. Vercel Web Analytics measures site visits and page views in production. No resume contents, filenames, or check results are sent to analytics; page URL query strings and fragments are stripped before tracking. Text is inserted as text, never executed as HTML. Clearing the file removes the displayed results; reloading also clears the session.
 
 The site still loads its static resources and Google Fonts over the network. Following the attribution or creator links opens LinkedIn. Neither action sends the resume contents.
 
