@@ -1,6 +1,6 @@
 # Resume Check
 
-[![Live Product](https://img.shields.io/badge/Live_Product-resumecheck--dhruv.vercel.app-C7FF3D?style=for-the-badge&logo=vercel&logoColor=17111F)](https://resumecheck-dhruv.vercel.app)
+[![Live Product](https://img.shields.io/badge/Live_Product-get--resumecheck.vercel.app-C7FF3D?style=for-the-badge&logo=vercel&logoColor=17111F)](https://get-resumecheck.vercel.app)
 [![Privacy](https://img.shields.io/badge/Privacy-Browser_Only-354C36?style=for-the-badge)](#privacy)
 [![Vite](https://img.shields.io/badge/Vite-Vanilla_JavaScript-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vite.dev/)
 
@@ -8,7 +8,7 @@
 
 Upload a PDF or DOCX to see its extracted text, run eight parsing checks, and get specific fixes for missing spaces, broken characters, and unreadable content. Everything runs on your device.
 
-**Links:** [Live product](https://resumecheck-dhruv.vercel.app) · [The checks](#eight-parsing-checks) · [Run locally](#run-locally) · [Limitations](#limitations) · [Connect with Dhruv](https://www.linkedin.com/in/dhruvtoprani/)
+**Links:** [Live product](https://get-resumecheck.vercel.app) · [The checks](#eight-parsing-checks) · [Run locally](#run-locally) · [Limitations](#limitations) · [Connect with Dhruv](https://www.linkedin.com/in/dhruvtoprani/)
 
 ![Resume Check upload screen and original-post attribution](docs/assets/home.png)
 
@@ -111,7 +111,7 @@ docs/ci.yml             Ready-to-enable CI workflow
 
 ## Deployment
 
-Vercel builds with `npm run build` and serves `dist/`. The public address is [resumecheck-dhruv.vercel.app](https://resumecheck-dhruv.vercel.app). Generated PDF assets, dependencies, local credentials, and build output are excluded from Git.
+Vercel builds with `npm run build` and serves `dist/`. The public address is [get-resumecheck.vercel.app](https://get-resumecheck.vercel.app). Generated PDF assets, dependencies, local credentials, and build output are excluded from Git.
 
 ## Limitations
 
