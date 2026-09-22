@@ -1,0 +1,10 @@
+node_modules/
+dist/
+.vercel/
+.env*.local
+.vercel
+public/pdf-assets/
+.env
+.env.*
+*.log
+.DS_Store

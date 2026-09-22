@@ -1,0 +1,23 @@
+{
+  "name": "resume-check",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "vite build",
+    "preview": "vite preview --host 0.0.0.0",
+    "test": "node --test src/*.test.js",
+    "predev": "node scripts/pdf-assets.js",
+    "prebuild": "node scripts/pdf-assets.js"
+  },
+  "dependencies": {
+    "lucide": "^0.577.0",
+    "mammoth": "^1.11.0",
+    "pdfjs-dist": "^6.3.289",
+    "vite": "^8.0.0"
+  },
+  "devDependencies": {
+    "pdf-lib": "^1.17.1"
+  }
+}
